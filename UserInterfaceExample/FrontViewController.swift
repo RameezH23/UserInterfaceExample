@@ -17,6 +17,34 @@ class FrontViewController: UIViewController, UITextFieldDelegate, UIPickerViewDa
     
     @IBOutlet weak var nameView: UILabel!
     
+    @IBOutlet weak var timerLabel: UITextField!
+    
+    var seconds = 10
+    var timer = Timer()
+    var isTimerRunning = false
+    
+
+    @IBAction func mysteryButtonAction(_ sender: UIButton) {
+        seconds = 10
+        timerLabel.isHidden = false
+        runTimer()
+    }
+    
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
+    }
+    
+    @objc func timerCounter() -> Void {
+        if (seconds > 0) {
+            seconds -= 1;
+            timerLabel.text = "\(seconds)"
+        }
+        if (seconds == 0) {
+            timerLabel.text = "Hello Eric"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +56,7 @@ class FrontViewController: UIViewController, UITextFieldDelegate, UIPickerViewDa
         pickerView.delegate=self
          pickerView.dataSource=self
         // Do any additional setup after loading the view.
+        self.timerLabel.isHidden = true;
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
