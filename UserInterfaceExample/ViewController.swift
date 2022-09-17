@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
     
     
-    @IBOutlet weak var stepper: UIStepper!
-    
     @IBOutlet weak var valueLabel: UILabel!
+    
+    
+    @IBOutlet weak var stepper: UIStepper!
     
     lazy var imageModel = {
         return ImageModel.sharedInstance()
@@ -23,6 +24,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         return UIImageView.init(image: self.imageModel.getImageWithName(displayImageName))
     }()
     
+    @IBOutlet weak var switchVar: UISegmentedControl!
+    @IBOutlet weak var onOff: UITextField!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
     var displayImageName = "Eric"
@@ -30,7 +34,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         stepper.wraps = true
           stepper.autorepeat = true
           stepper.maximumValue = 10
@@ -47,14 +50,50 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
-    
+
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         valueLabel.text = Int(sender.value).description
     }
     
     
+    @IBAction func nswfOnOff(_ sender: Any) {
+        switch switchVar.selectedSegmentIndex
+            {
+            case 0:
+                onOff.text = "This is not NSFW"
+            case 1:
+                onOff.text = "This is NSFW"
+            default:
+                break
+            }
+    }
+    
+
+//    @IBAction func NSFWupdate(_ sender: NSFWswitch) {
+//        blurImage(boolean: NSFWswitch.value)
+//    }
+    
+//    func blurImage(boolean: NSFWswitch.value) -> UIImage? {
+//        let context = CIContext(options: nil)
+//        let inputImage = CIImage(image: imageModel)
+//
+//        let filter = CIFilter(name: "CIGaussianBlur")
+//        filter?.setValue(inputImage, forKey: NSFW)
+//        filter?.setValue(10.0, forKey: NSFW)
+//
+//        let outputImage = filter?.outputImage
+//
+//        var cgImage:CGImage?
+//
+//        if let asd = outputImage{
+//            cgImage = context.createCGImage(asd, from: (inputImage?.extent)!)
+//        }
+//        if let cgImageA = cgImage{
+//            return UIImage(cgImage: cgImageA, scale: image.scale, orientation: image.imageOrientation)
+//        }
+//        return nil
+//    }
 
 
 }
-
