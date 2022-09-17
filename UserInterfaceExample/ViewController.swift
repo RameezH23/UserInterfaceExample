@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
+    
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBOutlet weak var valueLabel: UILabel!
+    
     lazy var imageModel = {
         return ImageModel.sharedInstance()
     }()
@@ -25,6 +30,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        stepper.wraps = true
+          stepper.autorepeat = true
+          stepper.maximumValue = 10
 
         if let size = self.imageView?.image?.size{
             self.scrollView.addSubview(self.imageView!)
@@ -37,6 +46,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
+    }
+    
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        valueLabel.text = Int(sender.value).description
     }
     
     
