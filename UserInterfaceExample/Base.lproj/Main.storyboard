@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dKy-NR-Mu3" kind="relationship" relationship="rootViewController" id="3Hv-v5-pYi"/>
+                        <segue destination="dKy-NR-Mu3" kind="relationship" relationship="rootViewController" id="0wj-UX-MLt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhb-uu-uqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,7 +240,7 @@
         <scene sceneID="CF9-5n-fdK">
             <objects>
                 <viewController id="dKy-NR-Mu3" customClass="FrontViewController" customModule="UserInterfaceExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WCk-Gn-5Kv">
+                    <view key="view" contentMode="scaleToFill" id="WCk-Gn-5Kv" userLabel="Front Page">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -344,7 +344,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="MFQ-0Z-ylK"/>
                     <connections>
-                        <outlet property="pickerView" destination="RWP-Zx-W46" id="OPj-xK-gM4"/>
+                        <outlet property="pickerView" destination="RWP-Zx-W46" id="ae9-Tt-c5o"/>
+                        <outlet property="selectionBtn" destination="r8S-xW-3I0" id="a0E-yM-6Ns"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfL-aC-8TV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
