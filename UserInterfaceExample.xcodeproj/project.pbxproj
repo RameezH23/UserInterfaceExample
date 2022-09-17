@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88B91A8128D555BC004ADED1 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B91A8028D555BC004ADED1 /* FrontViewController.swift */; };
 		B632222F250190A40064DEB5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632222E250190A40064DEB5 /* CollectionViewController.swift */; };
 		B6322231250191CF0064DEB5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6322230250191CF0064DEB5 /* CollectionViewCell.swift */; };
 		B689AE6D2500836D005FE8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689AE6C2500836D005FE8BE /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88B91A8028D555BC004ADED1 /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		B632222E250190A40064DEB5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B6322230250191CF0064DEB5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B689AE692500836D005FE8BE /* UserInterfaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInterfaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				B689AE81250085CA005FE8BE /* ImageModel.h */,
 				B689AE82250085CA005FE8BE /* ImageModel.m */,
 				B689AE722500836D005FE8BE /* Main.storyboard */,
+				88B91A8028D555BC004ADED1 /* FrontViewController.swift */,
 				B689AE7525008373005FE8BE /* Assets.xcassets */,
 				B689AE7725008373005FE8BE /* LaunchScreen.storyboard */,
 				B689AE7A25008373005FE8BE /* Info.plist */,
@@ -171,6 +174,7 @@
 				B689AE712500836D005FE8BE /* ViewController.swift in Sources */,
 				B689AE6D2500836D005FE8BE /* AppDelegate.swift in Sources */,
 				B6322231250191CF0064DEB5 /* CollectionViewCell.swift in Sources */,
+				88B91A8128D555BC004ADED1 /* FrontViewController.swift in Sources */,
 				B689AE6F2500836D005FE8BE /* SceneDelegate.swift in Sources */,
 				B689AE8525013898005FE8BE /* TableViewController.swift in Sources */,
 				B689AE83250085CA005FE8BE /* ImageModel.m in Sources */,
