@@ -394,6 +394,7 @@
                     <connections>
                         <outlet property="nameField" destination="Wpi-HM-x0p" id="fMq-cl-GVc"/>
                         <outlet property="nameView" destination="Ubl-uc-TKE" id="dSk-Fk-qlg"/>
+                        <outlet property="pickerView" destination="RWP-Zx-W46" id="nTc-kT-HPv"/>
                         <outlet property="recValue" destination="5Py-5t-zfe" id="6FJ-s6-cZi"/>
                         <outlet property="slider" destination="hxE-lg-Joh" id="pyo-x4-Rc1"/>
                     </connections>

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class FrontViewController: UIViewController, UITextFieldDelegate {
+class FrontViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var slider: UISlider!
-    
+    @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var recValue: UILabel!
     @IBOutlet weak var nameField: UITextField!
     
@@ -25,6 +25,8 @@ class FrontViewController: UIViewController, UITextFieldDelegate {
         slider.value = 0
         recValue.text = String(Int(slider.value))
 
+        pickerView.delegate=self
+         pickerView.dataSource=self
         // Do any additional setup after loading the view.
     }
     
@@ -39,6 +41,17 @@ class FrontViewController: UIViewController, UITextFieldDelegate {
         slider.maximumValue = 10
         slider.minimumValue = 0
         recValue.text = String(Int(slider.value))
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 10
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return ["1","2","3","4","5","6","7","8","9","10"][row]
     }
     
 }
