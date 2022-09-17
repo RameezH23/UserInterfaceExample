@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="840.40178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Front View Controller-->
         <scene sceneID="CF9-5n-fdK">
             <objects>
-                <viewController id="dKy-NR-Mu3" sceneMemberID="viewController">
+                <viewController id="dKy-NR-Mu3" customClass="FrontViewController" customModule="UserInterfaceExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WCk-Gn-5Kv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
