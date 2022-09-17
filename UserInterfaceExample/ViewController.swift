@@ -44,7 +44,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             self.scrollView.minimumZoomScale = 0.1
             self.scrollView.delegate = self
         }
-        
+            
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

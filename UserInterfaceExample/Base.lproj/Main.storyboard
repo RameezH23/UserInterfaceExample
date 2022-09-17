@@ -112,7 +112,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="mgx-9o-IRl"/>
                             </scrollView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-dM-NgC">
-                                <rect key="frame" x="160" y="199" width="94" height="32"/>
+                                <rect key="frame" x="151" y="199" width="94" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="dbm-Ma-k4y"/>
                                     <constraint firstAttribute="height" constant="32" id="yj2-4c-0dE"/>
@@ -122,7 +122,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-CG-MIB">
-                                <rect key="frame" x="110.5" y="127" width="193" height="21"/>
+                                <rect key="frame" x="101.5" y="127" width="193" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Yxd-tz-zCN"/>
                                     <constraint firstAttribute="width" constant="193" id="kvJ-OQ-Y8T"/>
@@ -132,7 +132,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-5g-UPy">
-                                <rect key="frame" x="110.5" y="170" width="193" height="21"/>
+                                <rect key="frame" x="101.5" y="170" width="193" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="UKK-lQ-oN6"/>
                                     <constraint firstAttribute="height" constant="21" id="V0v-Nt-e9L"/>
@@ -142,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSFW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-nS-OIe">
-                                <rect key="frame" x="160" y="607" width="94" height="21"/>
+                                <rect key="frame" x="151" y="607" width="94" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="ZBS-cE-xYe"/>
                                     <constraint firstAttribute="height" constant="21" id="obC-QV-wb1"/>
@@ -152,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sll-6D-uI9" userLabel="NSFWswitch">
-                                <rect key="frame" x="168.5" y="656" width="77" height="32"/>
+                                <rect key="frame" x="159.5" y="656" width="77" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="STy-tQ-KQH"/>
                                     <constraint firstAttribute="width" constant="77" id="vjL-ok-98g"/>
@@ -165,8 +165,8 @@
                                     <action selector="nswfOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="tbV-gh-mh2"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Off" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W64-BL-ihp">
-                                <rect key="frame" x="158.5" y="706" width="97" height="34"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This is not NSFW" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W64-BL-ihp">
+                                <rect key="frame" x="128.5" y="706" width="139" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Ei4-4O-4NP"/>
                                     <constraint firstAttribute="height" constant="34" id="cWQ-tc-hRA"/>
@@ -179,9 +179,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KnQ-CG-MIB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0JT-me-fZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W64-BL-ihp" secondAttribute="trailing" constant="128.5" id="3OH-fW-vGT"/>
                             <constraint firstItem="KnQ-CG-MIB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="5MI-Rb-HWg"/>
                             <constraint firstItem="ORZ-hw-T1k" firstAttribute="top" secondItem="eEA-dM-NgC" secondAttribute="bottom" constant="40" id="5Nb-fE-lPB"/>
                             <constraint firstItem="vxS-5g-UPy" firstAttribute="top" secondItem="KnQ-CG-MIB" secondAttribute="bottom" constant="22" id="C9r-qH-7TH"/>
+                            <constraint firstItem="W64-BL-ihp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128.5" id="JHR-TD-D1p"/>
                             <constraint firstItem="vxS-5g-UPy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lb1-hQ-qmJ"/>
                             <constraint firstItem="eEA-dM-NgC" firstAttribute="top" secondItem="vxS-5g-UPy" secondAttribute="bottom" constant="8" symbolic="YES" id="Q3b-PR-FMD"/>
                             <constraint firstItem="sll-6D-uI9" firstAttribute="top" secondItem="9eP-nS-OIe" secondAttribute="bottom" constant="28" id="fGg-NG-Jgi"/>
@@ -354,7 +356,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubl-uc-TKE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubl-uc-TKE">
                                 <rect key="frame" x="53" y="137" width="308" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="308" id="Evt-g0-IIP"/>

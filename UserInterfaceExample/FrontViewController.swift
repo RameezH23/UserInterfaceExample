@@ -48,10 +48,10 @@ class FrontViewController: UIViewController, UITextFieldDelegate, UIPickerViewDa
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
+        return 13
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ["1","2","3","4","5","6","7","8","9","10"][row]
+        return ["-18","19","20","21","22","23","24","25","26","27","28","29","Remembers Blockbuster"][row]
     }
     
 }
