@@ -117,6 +117,9 @@
                                     <constraint firstAttribute="width" constant="94" id="dbm-Ma-k4y"/>
                                     <constraint firstAttribute="height" constant="32" id="yj2-4c-0dE"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e4p-1N-f1L"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-CG-MIB">
                                 <rect key="frame" x="110.5" y="127" width="193" height="21"/>
@@ -128,7 +131,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-5g-UPy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-5g-UPy">
                                 <rect key="frame" x="110.5" y="170" width="193" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="UKK-lQ-oN6"/>
@@ -179,7 +182,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="GFd-Lp-AAd"/>
                     <connections>
+                        <outlet property="Stepper" destination="eEA-dM-NgC" id="FOY-fp-QGH"/>
                         <outlet property="scrollView" destination="ORZ-hw-T1k" id="tSK-hh-Apz"/>
+                        <outlet property="stepper" destination="eEA-dM-NgC" id="THy-aO-m81"/>
+                        <outlet property="valueLabel" destination="vxS-5g-UPy" id="ne5-hM-hTk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
