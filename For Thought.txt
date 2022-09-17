@@ -1,0 +1,3 @@
+2. Not more efficient because it doesn't access the variables and values directly, only through functions.
+3. Yes because the values returned from the functions are variables and depend on how many images there are. The only thing hardcoded are the names of the images on the dictionary for simplicity.
+4. Definitely not leave the names hardcoded. Use dynamic allocation to preload the images when scrolling more effiently.

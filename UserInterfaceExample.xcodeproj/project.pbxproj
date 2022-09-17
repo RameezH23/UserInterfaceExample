@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8856D36D28C1348000942627 /* For Thought.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8856D36C28C1348000942627 /* For Thought.txt */; };
 		B632222F250190A40064DEB5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632222E250190A40064DEB5 /* CollectionViewController.swift */; };
 		B6322231250191CF0064DEB5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6322230250191CF0064DEB5 /* CollectionViewCell.swift */; };
 		B689AE6D2500836D005FE8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689AE6C2500836D005FE8BE /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8856D36C28C1348000942627 /* For Thought.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "For Thought.txt"; sourceTree = "<group>"; };
 		B632222E250190A40064DEB5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B6322230250191CF0064DEB5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B689AE692500836D005FE8BE /* UserInterfaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInterfaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 		B689AE602500836D005FE8BE = {
 			isa = PBXGroup;
 			children = (
+				8856D36C28C1348000942627 /* For Thought.txt */,
 				B689AE6B2500836D005FE8BE /* UserInterfaceExample */,
 				B689AE6A2500836D005FE8BE /* Products */,
 				CC562C3B2585525D00F6FEA4 /* Frameworks */,
@@ -157,6 +160,7 @@
 				B689AE7925008373005FE8BE /* LaunchScreen.storyboard in Resources */,
 				B689AE7625008373005FE8BE /* Assets.xcassets in Resources */,
 				B689AE742500836D005FE8BE /* Main.storyboard in Resources */,
+				8856D36D28C1348000942627 /* For Thought.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
